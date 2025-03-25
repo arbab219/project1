@@ -1,0 +1,78 @@
+Suggested roadmap to develop and implement the **Toll Management System**
+
+---
+
+## ✅ **Phase 1: Requirements Gathering and Design**
+- Identify functional and non-functional requirements.
+- Determine key features like:
+  - Vehicle registration
+  - Toll booth management
+  - Toll payments
+  - Transaction reports
+  - Error handling and validations
+- Design the database schema (Tables: `Vehicle`, `TollBooth`, `TollTransaction`).
+- Plan data types and constraints.
+
+---
+
+## 🛠 **Phase 2: Database Setup**
+- Create tables with primary and foreign keys.
+- Implement constraints (e.g., NOT NULL, UNIQUE).
+- Index critical columns for faster queries.
+
+**Tasks:**
+- Create Vehicle, TollBooth, and TollTransaction tables.
+- Define triggers for payment status validation.
+
+---
+
+## 🧑‍💻 **Phase 3: PL/SQL Development**
+- Develop stored procedures for:
+  - Vehicle registration (`RegisterVehicle`)
+  - Toll payment processing (`MakeTollPayment`)
+- Create triggers for data validation and error handling.
+
+**Tasks:**
+- Implement the procedures and ensure error handling using `EXCEPTION`.
+- Test using sample data.
+- Create custom error messages using `RAISE_APPLICATION_ERROR`.
+
+---
+
+## 📊 **Phase 4: Reporting and Querying**
+- Write SQL queries for generating reports:
+  - Daily and monthly toll collections
+  - Vehicle-wise payment history
+  - Booth-wise revenue generation
+- Optimize queries using indexing.
+
+**Tasks:**
+- Create sample queries for transactions and summaries.
+
+---
+
+## 🧪 **Phase 5: Testing**
+- Perform unit testing on procedures and triggers.
+- Validate input scenarios:
+  - Successful payments
+  - Invalid payment status
+  - Missing vehicle details
+- Test error handling and rollback scenarios.
+
+**Tasks:**
+- Create test cases covering all scenarios.
+- Log errors using `DBMS_OUTPUT`.
+
+---
+
+## 🚀 **Phase 6: Deployment**
+- Prepare the final schema, procedures, and triggers.
+- Import sample data using SQL*Loader or direct inserts.
+- Generate basic reports using SQL queries.
+
+**Tasks:**
+- Deploy the system in a test environment.
+- Perform data consistency checks.
+
+---
+
